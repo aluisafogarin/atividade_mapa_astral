@@ -21,15 +21,17 @@ public class Main {
         System.out.println("Idade: " + Period.between(dateAna.toLocalDate(), LocalDate.now()).getYears());
         System.out.println("Ano de nascimento " + dateAna.getYear() + " foi bissexto? " + dateAna.toLocalDate().isLeapYear());
         System.out.println("Data e hora de nascimento: " + formatter.format(dateAna));
+        System.out.println("ZoneOffset: " + ZoneId.of("America/Buenos_Aires").getRules().getOffset(dateAna));
         System.out.println("Signo: " + getSigno(dateAna.toLocalDate()));
         System.out.println("Ascendente: " + getRising(getSigno(dateAna.toLocalDate()), dateAna.toLocalTime()));
-        System.out.println("Lua: " + getLunarSign(dateAna.toLocalTime(), "Mococa"));
+        System.out.println("Lua: " + getLunarSign(dateAna.toLocalTime(), "Buenos_Aires"));
         System.out.println("############################");
 
         System.out.println("Lucas");
         System.out.println("Idade: " + Period.between(dateLucas.toLocalDate(), LocalDate.now()).getYears());
         System.out.println("Ano de nascimento " + dateLucas.getYear() + " foi bissexto? " + dateLucas.toLocalDate().isLeapYear());
         System.out.println("Data e hora de nascimento: " + formatter.format(dateLucas));
+        System.out.println("ZoneOffset: " + ZoneId.of("America/Recife").getRules().getOffset(dateLucas));
         System.out.println("Signo: " + getSigno(dateLucas.toLocalDate()));
         System.out.println("Ascendente: " + getRising(getSigno(dateLucas.toLocalDate()), dateLucas.toLocalTime()));
         System.out.println("Lua: " + getLunarSign(dateLucas.toLocalTime(), "Recife"));
@@ -39,6 +41,7 @@ public class Main {
         System.out.println("Idade: " + Period.between(dateArtur.toLocalDate(), LocalDate.now()).getYears());
         System.out.println("Ano de nascimento " + dateArtur.getYear() + " foi bissexto? " + dateArtur.toLocalDate().isLeapYear());
         System.out.println("Data e hora de nascimento: " + formatter.format(dateArtur));
+        System.out.println("ZoneOffset: " + ZoneId.of("America/Recife").getRules().getOffset(dateArtur));
         System.out.println("Signo: " + getSigno(dateArtur.toLocalDate()));
         System.out.println("Ascendente: " + getRising(getSigno(dateArtur.toLocalDate()), dateArtur.toLocalTime()));
         System.out.println("Lua: " + getLunarSign(dateArtur.toLocalTime(), "Sao_Paulo"));
@@ -48,6 +51,7 @@ public class Main {
         System.out.println("Idade: " + Period.between(dateTomas.toLocalDate(), LocalDate.now()).getYears());
         System.out.println("Ano de nascimento " + dateTomas.getYear() + " foi bissexto? " + dateTomas.toLocalDate().isLeapYear());
         System.out.println("Data e hora de nascimento: " + formatter.format(dateTomas));
+        System.out.println("ZoneOffset: " + ZoneId.of("America/Recife").getRules().getOffset(dateTomas));
         System.out.println("Signo: " + getSigno(dateTomas.toLocalDate()));
         System.out.println("Ascendente: " + getRising(getSigno(dateTomas.toLocalDate()), dateTomas.toLocalTime()));
         System.out.println("Lua: " + getLunarSign(dateTomas.toLocalTime(), "Cuiaba"));
